@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Sign in {% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+            <div class="card">
+                <div>
+                    
+                    <a href="{% url 'social:begin' 'google-oauth2' %}" class="btn btn-primary">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvv8wIAmwSWUbhnIwopm_4_bRxlN0PLI89N_9O4MQVHToOB55zLbsw6t5Iwa683GfROLJ6zt9qxuJmw9d8JwFamjiWnmLTLL8vc5nwKCtzW9TMrZIYBZqCTRf8vnRxefmP9okMJPjc1LM4t84AqDD5VOaTsHfQEOEw6HDql65iniZXvTMQvdS_tu3IjRY/s320/Google__G__logo.svg.webp" alt="Google Logo" class="google-logo" height="30px"><span>Login With Google</span>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
